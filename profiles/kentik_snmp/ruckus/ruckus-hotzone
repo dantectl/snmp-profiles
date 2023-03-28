@@ -1,0 +1,19 @@
+# http://circitor.fr/Mibs/Html/R/RUCKUS-SYSTEM-MIB.php
+# https://mibs.observium.org/mib/RUCKUS-PRODUCTS-MIB/#ruckusR510
+---
+extends:
+  - system-mib.yml
+  - if-mib.yml
+
+provider: kentik-wireless-accesspoint
+
+sysobjectids:
+  - 1.3.6.1.4.1.25053.3.1.4.*     # Ruckus Hotzone Products
+  - 1.3.6.1.4.1.25053.3.1.4.91     # Ruckus R510
+
+
+
+# This device is incomplete. We're still trying to locate system/hardware related MIBs for the Hotzone products. 
+# The MIBs for ZoneDirectors don't show up in the user's snmpwalk. 
+# See the following resources
+# http://oid-info.com/get/1.3.6.1.4.1.25053.3.1
